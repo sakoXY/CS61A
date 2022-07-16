@@ -1,0 +1,3 @@
+node_modules    忽略node_modules的单文件 
+*.zip            表示忽略所有 .zip结尾的文件
+.history
