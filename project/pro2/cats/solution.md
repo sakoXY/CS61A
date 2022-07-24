@@ -185,4 +185,4 @@
 
 #### Attention
 
-- 需要用到后面给出的函数time
+- 需要用到后面给出的函数`time` 和`word_at`
