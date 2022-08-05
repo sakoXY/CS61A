@@ -76,13 +76,19 @@ def eval_all(expressions, env):
     """
     # BEGIN PROBLEM 7
     # replace this with lines of your own code
+    # if not expressions :
+    #     return None
+    # ans = nil
+    # while expressions:
+    #     ans = scheme_eval(expressions.first,env)
+    #     expressions = expressions.rest
+    # return ans
     if not expressions :
-        return None
-    ans = nil
-    while expressions:
-        ans = scheme_eval(expressions.first,env)
-        expressions = expressions.rest
-    return ans
+          return None
+    elif not expressions.rest :
+        return scheme_eval(expressions.first, env)
+    evalate_but_not_display = scheme_eval(expressions.first,env)
+    return eval_all(expressions.rest,env)
     # END PROBLEM 7
 
 ################

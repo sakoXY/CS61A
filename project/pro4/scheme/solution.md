@@ -167,22 +167,25 @@
 - ```python
   if not expressions :
           return None
-      elif not expressions.rest :
-          return scheme_eval(expressions.first, env)
-      return eval_all(expressions.rest,env)
+  elif not expressions.rest :
+  	return scheme_eval(expressions.first, env)
+  evalate_but_not_display = scheme_eval(expressions.first,env)
+  return eval_all(expressions.rest,env)
   ```
-
+  
 - ```python
   if not expressions :
           return None
-      ans = nil
-      while expressions:
-          ans = scheme_eval(expressions.first,env)
-          expressions = expressions.rest
-      return ans
+  ans = nil
+  while expressions:
+  	ans = scheme_eval(expressions.first,env)
+  	expressions = expressions.rest
+  return ans
   ```
 
-- 
+- > evalate_but_not_display = scheme_eval(expressions.first,env)
+  >
+  > 这句加上去以后，实现了题目要求的evaluate所有的要求
 
 ### Problem8
 
