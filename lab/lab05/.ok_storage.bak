@@ -8,3 +8,5 @@
 'add_trees-correct', (3584, 70)
 'build_successors_table-correct', (4096, 70)
 'construct_sent-correct', (4608, 70)
+'check_city_abstraction-correct', (5120, 70)
+'check_abstraction-correct', (5632, 70)

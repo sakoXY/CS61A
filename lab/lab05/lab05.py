@@ -52,7 +52,7 @@ def closer_city(lat, lon, city_a, city_b):
     city_obj = make_city('city_obj', lat, lon)
     distance_a = distance(city_obj, city_a)
     distance_b = distance(city_obj, city_b)
-    return city_a[0] if distance_a < distance_b else city_b[0]
+    return get_name(city_a) if distance_a < distance_b else get_name(city_b)
 
 
 def check_city_abstraction():

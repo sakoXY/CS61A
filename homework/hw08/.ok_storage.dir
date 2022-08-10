@@ -3,3 +3,4 @@
 'derive-product-correct', (1024, 70)
 'make-exp-correct', (1536, 70)
 'derive-exp-correct', (2048, 70)
+'quasiquote-correct', (2560, 70)

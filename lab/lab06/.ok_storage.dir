@@ -1,3 +1,5 @@
 'nonlocal_quiz-correct', (0, 70)
 'scale-correct', (512, 70)
 'hailstone-correct', (1024, 70)
+'insert_items-correct', (1536, 70)
+'List Mutation-correct', (2048, 70)

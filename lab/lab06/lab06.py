@@ -16,7 +16,14 @@ def insert_items(lst, entry, elem):
     True
     """
     "*** YOUR CODE HERE ***"
-    return lst[:entry] + [elem] + lst[entry + 1:]
+    i = 0
+    while i < len(lst):
+        if lst[i] == entry:
+            lst.insert(i + 1, elem)
+            i += 2
+        else:
+            i += 1
+    return lst
 
 
 def naturals():
